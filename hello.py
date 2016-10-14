@@ -2,16 +2,9 @@ def main():
 
     total = 0.0
     length = 0.0
-    average = 0.0
-
     try:
-        #Get the name of a file
         filename = raw_input('Enter a file name: ')
-
-        #Open the file
         infile = open(filename, 'r')
-
-        #Read values from file and compute average
         for line in infile:
             print line.rstrip("\n")
             amount = float(line.rstrip("\n"))
